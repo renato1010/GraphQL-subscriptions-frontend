@@ -1,40 +1,28 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { AppShell } from "./components";
+import { UserProfile } from "lib";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const dummyUser: UserProfile = {
+    name: "Renato",
+    lastName: "Perez",
+    picture: "https://en.gravatar.com/userimage/98563751/815e6d570ad39b0664b876d4d7c77b47.png",
+  };
   return (
-    <div className="App">
-      <header className="App-header bg-pink-200">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <Router>
+      <AppShell user={dummyUser}>
+        <Switch>
+          <Route path="/" exact>
+            <h2>home</h2>
+          </Route>
+          <Route path="/latest">
+            <h2>latest</h2>
+          </Route>
+        </Switch>
+      </AppShell>
+    </Router>
   );
 }
 
-export default App;
+export { App };
