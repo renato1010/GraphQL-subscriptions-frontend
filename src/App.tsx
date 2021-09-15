@@ -1,13 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { AppShell } from "./components";
-import { UserProfile } from "lib";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { AppShell } from './components';
+import { UserProfile } from 'lib';
 
-function App() {
+function App(): JSX.Element {
   const dummyUser: UserProfile = {
-    name: "Renato",
-    lastName: "Perez",
-    picture: "https://en.gravatar.com/userimage/98563751/815e6d570ad39b0664b876d4d7c77b47.png",
+    name: 'Renato',
+    lastName: 'Perez',
+    picture: 'https://en.gravatar.com/userimage/98563751/815e6d570ad39b0664b876d4d7c77b47.png',
   };
   return (
     <Router>
