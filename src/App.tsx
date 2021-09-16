@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { AppShell } from './components';
+import { AppShell, EnterResponses } from './components';
 import { UserProfile } from 'lib';
 
 function App(): JSX.Element {
@@ -14,7 +14,7 @@ function App(): JSX.Element {
       <AppShell user={dummyUser}>
         <Switch>
           <Route path="/" exact>
-            <h2>home</h2>
+            <EnterResponses />
           </Route>
           <Route path="/latest">
             <h2>latest</h2>

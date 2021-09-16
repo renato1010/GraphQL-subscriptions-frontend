@@ -2,16 +2,12 @@ import React, { Fragment, useState, PropsWithChildren } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react';
 import { HomeIcon, MenuIcon, XIcon, ClipboardListIcon } from '@heroicons/react/outline';
-import { UserProfile } from 'lib';
+import { UserProfile, classNames } from 'lib';
 
 const navigation = [
   { name: 'Home', to: '/', icon: HomeIcon },
   { name: 'List', to: '/latest', icon: ClipboardListIcon },
 ];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ');
-}
 
 type AppShellProps = { user: UserProfile };
 
@@ -172,9 +168,6 @@ export function AppShell({ user, children }: PropsWithChildren<AppShellProps>): 
         </div>
         <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none">
           <div className="py-6">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
-            </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
               {/* Replace with your content */}
               {children}
