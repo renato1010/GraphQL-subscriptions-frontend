@@ -13,7 +13,7 @@ const initialState = {
   value: '',
   isValid: false,
 };
-const initialExtraProps = {
+const initNotificationProps = {
   title: '',
   subtitle: '',
   hasError: false,
@@ -21,7 +21,7 @@ const initialExtraProps = {
 const EnterResponses = (): JSX.Element => {
   const [response, setresponse] = useState<typeof initialState>(initialState);
   const [showNotification, setShowNotification] = useState<boolean>(false);
-  const [notificationExtraProps, setNotificationExtraProps] = useState(initialExtraProps);
+  const [notificationExtraProps, setNotificationExtraProps] = useState(initNotificationProps);
   const [createResponse] = useMutation<CreateResponse_Response, CreateResponse_Variables>(
     CREATE_RESPONSE_MUTATION,
     {

@@ -82,3 +82,44 @@ Add preference rules for Prettier at [`.prettierrc`](.prettierrc)
   "jsxBracketSameLine": true
 }
 ```
+
+## Set Apollo-Client
+
+We'll need [`Apollo-Client`](https://www.apollographql.com/docs/react/) to connect our React App to Server.  
+deps:
+
+```bash
+yarn add @apollo/client graphql
+```
+
+Then Connect at [`src/main.tsx`](src/main.tsx)
+
+```typescript
+const httpLink = createHttpLink({ uri: 'http://localhost:4000' });
+const client = new ApolloClient({ link: httpLink, cache: new InMemoryCache() });
+
+ReactDOM.render(
+  <React.StrictMode>
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```
+
+## Connect [`EnterResponses`](src/components/EnterResponses.tsx)
+
+We'll use `useMutation` hook from `Apollo-Client`
+
+```typescript
+const [createResponse] = useMutation<CreateResponse_Response, CreateResponse_Variables>(
+  CREATE_RESPONSE_MUTATION,
+  {
+    variables: { createResponseInput: { response: response.value } },
+  }
+);
+```
+
+Run:
+![Enter Responses flow](screenshots/create-response-local_Peek%202021-09-17%2020-13.gif)
