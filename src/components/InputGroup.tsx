@@ -1,20 +1,17 @@
-import React, { useState, ChangeEvent } from 'react';
+import React, { ChangeEvent } from 'react';
 import { ArrowCircleUpIcon } from '@heroicons/react/solid';
-import { classNames, nonAcceptedResponses } from 'lib';
+import { classNames } from 'lib';
 
-const initialState = {
-  value: '',
-  isValid: false,
+type InputGroupProps = {
+  response: { value: string; isValid: boolean };
+  responseHandler: (e: ChangeEvent<HTMLInputElement>) => void;
+  onSubmitResponse: () => void;
 };
-const InputGroup = (): JSX.Element => {
-  const [response, setresponse] = useState<typeof initialState>(initialState);
-
-  const responseHandler = (evt: ChangeEvent<HTMLInputElement>) => {
-    const { value } = evt.target;
-    const isBlackListed = nonAcceptedResponses(value);
-    const isValid = !isBlackListed && value.length > 3 ? true : false;
-    setresponse((response) => ({ ...response, value, isValid }));
-  };
+const InputGroup = ({
+  response,
+  responseHandler,
+  onSubmitResponse,
+}: InputGroupProps): JSX.Element => {
   return (
     <div className="w-full lg:w-3/4">
       <label htmlFor="email" className="block text-xl font-medium text-gray-700">
@@ -39,6 +36,7 @@ const InputGroup = (): JSX.Element => {
           />
         </div>
         <button
+          onClick={onSubmitResponse}
           disabled={!response.isValid}
           className={classNames(
             response.isValid
