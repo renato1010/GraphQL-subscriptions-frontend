@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { AppShell, EnterResponses } from './components';
+import { AppShell, EnterResponses, ResponseList } from './components';
 import { UserProfile } from 'lib';
 
 function App(): JSX.Element {
@@ -17,7 +17,7 @@ function App(): JSX.Element {
             <EnterResponses />
           </Route>
           <Route path="/latest">
-            <h2>latest</h2>
+            <ResponseList />
           </Route>
         </Switch>
       </AppShell>
