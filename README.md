@@ -122,4 +122,18 @@ const [createResponse] = useMutation<CreateResponse_Response, CreateResponse_Var
 ```
 
 Run:
-![Enter Responses flow](screenshots/create-response-local_Peek%202021-09-17%2020-13.gif)
+<br >
+<img src="screenshots/create-response-local_Peek 2021-09-17 20-13.gif" width="1200">
+
+## Set real time updates for the [`ResponseList`](src/components/ResponseList.tsx) component
+
+We'll use [`Apollo-Client Subscriptions`](https://www.apollographql.com/docs/react/data/subscriptions/) to get real-time updates for the list of saved responses,  
+so any time a new response the server will push this new data directly to connected clients
+
+All configurations are set in [`src/main.tsx`](src/main.tsx), the takeaway here is: will have two connections  
+ 1 HTTP for the _queries_ and _mutations_  
+ 2 Websocket for _subscriptions_
+
+Results:
+
+<video src="screenshots/real-time-updates-for-response-list2021-09-18_21-44-47.mp4" controls width="1200"></video>

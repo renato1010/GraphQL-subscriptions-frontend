@@ -1,29 +1,6 @@
 import React from 'react';
 import { Response } from 'lib';
 
-// const responses: Response[] = [
-//   {
-//     response: 'Leslie Alexandera',
-//     createdAt: '2021-09-18T22:44:11.395Z',
-//   },
-//   {
-//     response: 'Leslie Alexandera',
-//     createdAt: '2021-09-18T22:44:11.395Z',
-//   },
-//   {
-//     response: 'Leslie Alexandera',
-//     createdAt: '2021-09-18T22:44:11.395Z',
-//   },
-//   {
-//     response: 'Leslie Alexandera',
-//     createdAt: '2021-09-18T22:44:11.395Z',
-//   },
-//   {
-//     response: 'Leslie Alexandera',
-//     createdAt: '2021-09-18T22:44:11.395Z',
-//   },
-// ];
-
 type GridListProps = {
   responseList: Response[];
 };
