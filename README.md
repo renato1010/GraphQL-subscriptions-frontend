@@ -123,7 +123,9 @@ const [createResponse] = useMutation<CreateResponse_Response, CreateResponse_Var
 
 Run:
 <br >
-<img src="screenshots/create-response-local_Peek 2021-09-17 20-13.gif" width="1200">
+<img src="screenshots/create-response-local.gif" width="1200">
+
+<br>
 
 ## Set real time updates for the [`ResponseList`](src/components/ResponseList.tsx) component
 
@@ -136,4 +138,4 @@ All configurations are set in [`src/main.tsx`](src/main.tsx), the takeaway here 
 
 Results:
 
-<video src="screenshots/real-time-updates-for-response-list2021-09-18_21-44-47.mp4" controls width="1200"></video>
+<video src="screenshots/real-time-updates-for-response-list.mp4" controls width="1200"></video>
