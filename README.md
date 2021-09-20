@@ -136,9 +136,6 @@ All configurations are set in [`src/main.tsx`](src/main.tsx), the takeaway here 
  1 HTTP for the _queries_ and _mutations_  
  2 Websocket for _subscriptions_
 
-Results:
-
-![real time updates](https://github.com/renato1010/pickfu-frontend/blob/main/screenshots/real-time-updates-for-response-list.mp4)
 
 ## Call deployed GraphQL api:
 
@@ -155,4 +152,4 @@ deployed site is available at: [`https://sad-khorana-9c2506.netlify.app/`](https
 
 Running test on deployed App:
 
-![deployed app](https://github.com/renato1010/pickfu-frontend/blob/main/screenshots/test-deployed-frontend.mp4)
+[screenshot](https://drive.google.com/file/d/1CcaY7Son0-F9CCanScTag1CqiLwU5tBC/view?usp=sharing)
