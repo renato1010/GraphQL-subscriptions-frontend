@@ -147,3 +147,12 @@ The url for Heroku server is [`https://renato-pickfu.herokuapp.com/`](https://re
 Need some changes at [`src/main.tsx`](src/main.tsx):
 
 ![main.tsx](screenshots/frontend-call-deployed-api-heroku.png)
+
+## deploy Frontend to [`Netlify`](https://www.netlify.com/)  
+
+Having backend(server) deployed, last step will be deploy frontend as static files.  
+deployed site is available at: [`https://sad-khorana-9c2506.netlify.app/`](https://sad-khorana-9c2506.netlify.app/)  
+
+Running test on deployed App:
+
+<video src="screenshots/test-deployed-frontend.mp4" controls width="1200"></video>
