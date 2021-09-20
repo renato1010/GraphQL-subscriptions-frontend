@@ -139,3 +139,11 @@ All configurations are set in [`src/main.tsx`](src/main.tsx), the takeaway here 
 Results:
 
 <video src="screenshots/real-time-updates-for-response-list.mp4" controls width="1200"></video>
+
+## Call deployed GraphQL api:
+
+Now that we have deployed GraphQL API to Heroku we can call from the Frontend  
+The url for Heroku server is [`https://renato-pickfu.herokuapp.com/`](https://renato-pickfu.herokuapp.com/)  
+Need some changes at [`src/main.tsx`](src/main.tsx):
+
+![main.tsx](screenshots/frontend-call-deployed-api-heroku.png)

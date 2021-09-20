@@ -7,12 +7,12 @@ import './index.css';
 import { App } from './App';
 
 const wsLink = new WebSocketLink({
-  uri: 'ws://localhost:4000/',
+  uri: 'ws://renato-pickfu.herokuapp.com/',
   options: {
     reconnect: true,
   },
 });
-const httpLink = new HttpLink({ uri: 'http://localhost:4000' });
+const httpLink = new HttpLink({ uri: 'https://renato-pickfu.herokuapp.com/' });
 const splitLink = split(
   ({ query }) => {
     const definition = getMainDefinition(query);
