@@ -1,5 +1,14 @@
 # PickFu Frontend Challenge
 
+## Clone project
+
+If want to run project locally
+
+- clone project from Github
+- checkout to branch `dev` you will also need to run the backend server locally
+- instal deps: `yarn`
+- run dev server: `yarn dev`
+
 ## Scaffolding the project
 
 Will use [Vite](https://vitejs.dev/) tool to configure the project
@@ -135,7 +144,6 @@ so any time a new response the server will push this new data directly to connec
 All configurations are set in [`src/main.tsx`](src/main.tsx), the takeaway here is: will have two connections  
  1 HTTP for the _queries_ and _mutations_  
  2 Websocket for _subscriptions_
-
 
 ## Call deployed GraphQL api:
 
