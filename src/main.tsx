@@ -7,7 +7,7 @@ import './index.css';
 import { App } from './App';
 
 const wsLink = new WebSocketLink({
-  uri: 'ws://renato-pickfu.herokuapp.com/',
+  uri: 'wss://renato-pickfu.herokuapp.com/',
   options: {
     reconnect: true,
   },
