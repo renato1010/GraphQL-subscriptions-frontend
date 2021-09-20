@@ -138,7 +138,7 @@ All configurations are set in [`src/main.tsx`](src/main.tsx), the takeaway here 
 
 Results:
 
-<video src="screenshots/real-time-updates-for-response-list.mp4" controls width="1200"></video>
+<video src="https://github.com/renato1010/pickfu-frontend/blob/main/screenshots/real-time-updates-for-response-list.mp4" controls width="1200"></video>
 
 ## Call deployed GraphQL api:
 
@@ -155,4 +155,4 @@ deployed site is available at: [`https://sad-khorana-9c2506.netlify.app/`](https
 
 Running test on deployed App:
 
-<video src="screenshots/test-deployed-frontend.mp4" controls width="1200"></video>
+<video src="https://github.com/renato1010/pickfu-frontend/blob/main/screenshots/test-deployed-frontend.mp4" controls width="1200"></video>
