@@ -160,5 +160,6 @@ deployed site is available at: [`https://sad-khorana-9c2506.netlify.app/`](https
 
 Running test on deployed App:
 
+`ctrl + click` to open in new tab  
 [screenshot deployed](https://drive.google.com/file/d/1CcaY7Son0-F9CCanScTag1CqiLwU5tBC/view?usp=sharing)  
 [screenshot local](https://drive.google.com/file/d/1RlQv6W51V_psUfQnjrmZnAVnGDSZUGcc/view?usp=sharing)
