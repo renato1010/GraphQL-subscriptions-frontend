@@ -1,4 +1,4 @@
-# PickFu Frontend Challenge
+# Frontend for GraphQL subscriptions backend
 
 ## Clone project
 
@@ -19,7 +19,7 @@ yarn create vite
 
 with Options:
 
-- Project name: pickfu-frontend
+- Project name: project-name
 - template react-ts
 
 ## Set Router and Style framework
